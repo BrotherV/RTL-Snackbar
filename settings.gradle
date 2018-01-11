@@ -1,0 +1,2 @@
+include ':app', ':SnackbarLibrary'
+rootProject.name = 'artifact'

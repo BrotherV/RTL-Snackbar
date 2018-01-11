@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bvapp.rtlsnakbar.ActivityMain"
+    tools:ignore="RtlHardcoded" android:layoutDirection="ltr">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        app:fabSize="normal"
+        app:srcCompat="@android:drawable/ic_input_add"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnRtl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RTL SnakBar"/>
+
+        <Button
+            android:id="@+id/btnLtr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LTR SnackBar"/>
+
+        <Button
+            android:id="@+id/btnRtlAB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RTL SnakBar with Action Button"/>
+
+        <Button
+            android:id="@+id/btnLtrAB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LTR SnackBar with Action Button"/>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
