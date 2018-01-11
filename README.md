@@ -1,6 +1,6 @@
 [![GitHub license](https://img.shields.io/github/license/dcendents/android-maven-gradle-plugin.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 [![Maven Central](https://img.shields.io/maven-central/v/com.github.dcendents/android-maven-gradle-plugin.svg)](http://search.maven.org/#search%7Cga%7C1%7Ca%3A%22android-maven-gradle-plugin%22)
-
+[![](https://jitpack.io/v/BrotherV/RTL-Snackbar.svg)](https://jitpack.io/#BrotherV/RTL-Snackbar)
 # RTL-Snackbar
 ***Right to left, Left to Right Snakbar base on android design library***
 ## Note:
@@ -72,7 +72,23 @@ showSnackBarWithActionButton(Context context, View view, String title, String ac
 	                                                int backGroundColor, Typeface tf0 , Typeface tf1, float titleSize, float actionSize,                                                     int dir, View.OnClickListener listener)
                                                   
 ```
+## How to use library
 
+Step 1. Add it in your root build.gradle at the end of repositories:
+```Groovy
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+Step 2. Add the dependency
+```Groovy
+dependencies {
+	        compile 'com.github.BrotherV:RTL-Snackbar:1.0.2'
+	}
+```
 
 ## License
 
