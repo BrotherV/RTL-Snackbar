@@ -69,7 +69,9 @@ showSnackBarWithActionButton(Context context, View view, String title, String ac
 
 showSnackBarWithActionButton(Context context, View view, String title, String actionTitle,
 	                                                int titleColor, int actionColor,
-	                                                int backGroundColor, Typeface tf0 , Typeface tf1, float titleSize, float actionSize,                                                     int dir, View.OnClickListener listener)
+	                                                int backGroundColor, Typeface tf0 , Typeface tf1, float titleSize, 
+	                                                float actionSize, int dir,
+	                                                View.OnClickListener listener)
                                                   
 ```
 ## How to use library
