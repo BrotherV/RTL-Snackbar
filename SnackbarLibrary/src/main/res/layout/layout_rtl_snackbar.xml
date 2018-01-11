@@ -11,20 +11,24 @@
     <LinearLayout
         android:id="@+id/laySnackBar"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:gravity="center_vertical"
+        android:minHeight="48dp"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnSnackBar"
+        <TextView
+            android:id="@+id/txtSnackBarAction"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
             android:layout_marginRight="8dp"
+            android:layout_marginTop="2dp"
             android:background="@drawable/btn_background"
-            />
+            android:gravity="center"
+            android:padding="8dp"/>
 
         <TextView
-            android:id="@+id/txtSnackBar"
+            android:id="@+id/txtSnackBarTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"

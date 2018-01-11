@@ -100,7 +100,6 @@ public class SnackbarUtil {
 		if(isColorChange){
 			textTitle.setTextColor(textColor);
 		}
-
 		if(tf != null){
 			textTitle.setTypeface(tf);
 		}
@@ -238,20 +237,20 @@ public class SnackbarUtil {
 			View snackView = inflater.inflate(R.layout.layout_rtl_snackbar, null);
 			// Configure the view
 
-			Button btnSnackBar = (Button) snackView.findViewById(R.id.btnSnackBar);
-			btnSnackBar.setText(actionTitle);
+			TextView textNewAction = (TextView) snackView.findViewById(R.id.txtSnackBarAction);
+			textNewAction.setText(actionTitle);
 			if(isColorChange){
-				btnSnackBar.setTextColor(actionColor);
+				textNewAction.setTextColor(actionColor);
 			}
 			if(tf1 != null){
-				btnSnackBar.setTypeface(tf1);
+				textNewAction.setTypeface(tf1);
 			}
-			if(size1 != 0){
-				btnSnackBar.setTextSize(size1);
+			if(size2 != 0){
+				textNewAction.setTextSize(size2);
 			}
 
 
-			TextView textNewTitle = (TextView) snackView.findViewById(R.id.txtSnackBar);
+			TextView textNewTitle = (TextView) snackView.findViewById(R.id.txtSnackBarTitle);
 			textNewTitle.setText(title);
 			if(isColorChange){
 				textNewTitle.setTextColor(titleColor);
@@ -259,13 +258,13 @@ public class SnackbarUtil {
 			if(tf0 != null){
 				textNewTitle.setTypeface(tf0);
 			}
-			if(size2 != 0){
-				textNewTitle.setTextSize(size2);
+			if(size1 != 0){
+				textNewTitle.setTextSize(size1);
 			}
 
 			// Add the view to the Snackbar's layout
 			layout.addView(snackView, 0);
-			btnSnackBar.setOnClickListener(new View.OnClickListener() {
+			textNewAction.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View view) {
 					listener.onClick(view);
@@ -286,14 +285,29 @@ public class SnackbarUtil {
 			if(isColorChange){
 				sbView.setBackgroundColor(backGroundColor);
 			}
+
 			TextView textTitle = (TextView)sbView.findViewById(android.support.design.R.id.snackbar_text);
 			if(isColorChange){
 				textTitle.setTextColor(titleColor);
 			}
+			if(tf0 != null){
+				textTitle.setTypeface(tf0);
+			}
+			if(size1 != 0){
+				textTitle.setTextSize(size1);
+			}
+
 			TextView textAction = (TextView)sbView.findViewById(android.support.design.R.id.snackbar_action);
 			if(isColorChange){
 				textAction.setTextColor(actionColor);
 			}
+			if(tf1 != null){
+				textAction.setTypeface(tf1);
+			}
+			if(size2 != 0){
+				textAction.setTextSize(size2);
+			}
+
 			snackbar.show();
 		}
 	}
